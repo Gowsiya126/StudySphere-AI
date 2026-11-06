@@ -1,45 +1,45 @@
-# StudySphere AI
+StudySphere AI 📚
 
-A beginner-friendly local RAG study assistant built with Python.
+AI-Powered RAG Study Assistant
 
-## Features
-- Upload one or more text-based PDFs
-- Ask questions grounded in indexed document chunks
-- ELI5 explanations
-- MCQ and short-answer question generation
-- Document summaries
-- Retrieved source filename and page references
+StudySphere AI is a beginner-friendly AI-powered study assistant built using Python. It uses Retrieval-Augmented Generation (RAG) to help students understand and retrieve information from their study materials.
 
-## Requirements
-- Windows 10/11
-- Python 3.12.x
-- Ollama for local LLM responses
-- Internet for the first download of Python packages, the embedding model and the Ollama model
+Features
 
-## Setup (PowerShell)
-```powershell
-cd D:\Development\Projects\StudySphereAI
-py -3.12 -m venv venv
-.\venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-```
+- Upload and process study materials
+- Retrieve relevant information
+- Ask questions about study content
+- Generate helpful study responses
 
-Install Ollama from https://ollama.com, open it, then run:
-```powershell
-ollama pull llama3.2:3b
-```
+Technology Stack
 
-Run the app:
-```powershell
-python -m streamlit run app.py
-```
+- Python 3.12.10
+- Retrieval-Augmented Generation (RAG)
+- Streamlit
+- [Add your actual embedding model and vector database here]
 
-The browser should open at http://localhost:8501.
+Installation
 
-## Important
-- Upload PDFs in the left sidebar and click **Process PDFs** before asking questions.
-- Scanned/image-only PDFs may not contain selectable text. Run OCR on those PDFs first.
-- The first embedding-model download may take a few minutes.
-- Ollama must be running locally for answer generation.
-- This is a learning project. Verify important answers against the original document.
+1. Clone the repository:
+   "git clone YOUR_GITHUB_REPOSITORY_LINK"
+
+2. Navigate to the project:
+   "cd StudySphere-AI"
+
+3. Create a virtual environment:
+   "python -m venv .venv"
+
+4. Activate it:
+   ".\.venv\Scripts\activate"
+
+5. Install dependencies:
+   "pip install -r requirements.txt"
+
+6. Run the application:
+   "streamlit run app.py"
+
+Developer
+
+Gowsiya Khatun
+
+BTech – Computer Science and Engineering
